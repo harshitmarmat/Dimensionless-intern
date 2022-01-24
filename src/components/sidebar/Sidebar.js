@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import classes from './Sidebar.module.css';
+import user from '../../assets/images/user.png'
 
 
 const Sidebar = () => {
@@ -14,7 +15,7 @@ const Sidebar = () => {
     return (
         <div className={classes.container}>
             <div className={classes.profile}>
-                <img src='https://cdn-icons-png.flaticon.com/512/149/149071.png' />
+                <img src={user} />
                 <p>demo@demios.com</p>
                 <p><span style={{'color':'#817d7d'}}>Your Tier :</span><span style={{'color':'blue'}}> Premium</span></p>
             </div>
